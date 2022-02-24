@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/laa-application.json",
+  "title": "An application for criminal legal aid",
+  "description": "Holds attributes of a criminal legal aid application",
+  "type": "object",
+  "properties": {
+    "client_details": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/client_details.json" },
+    "case_details": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/case_details.json" },
+    "interests_of_justice": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/interests_of_justice.json" },
+    "means_assessment": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/means_assessment.json" },
+    "evidence": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/evidence.json" }
+  },
+  "required": ["client_details", "case_details", "interests_of_justice", "means_assessment"],
+  "allOf": [{ "$ref": "#/definitions/crown_court_conditions" }],
+  "definitions": {
+    "crown_court_conditions": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/conditions/crown_court.json" }
+  }
+}

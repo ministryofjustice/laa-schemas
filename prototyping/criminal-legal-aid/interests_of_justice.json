@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/interests_of_justice.json",
+  "title": "Interests of justice test",
+  "description": "Holds attributes of the interests of justice test for criminal legal aid applications",
+  "type": "object",
+  "properties": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "reason": {
+          "enum": [
+            "liberty",
+            "suspended_sentence",
+            "livelihood",
+            "reputation",
+            "question_of_law",
+            "unable_to_understand",
+            "witnesses_needed",
+            "expert_cross_examination",
+            "interests_of_another",
+            "ioj_other"
+          ]
+        },
+        "justification": { "type": "string" }
+      }
+    }
+  }
+}
