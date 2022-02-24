@@ -4,5 +4,17 @@
     "key": "payslip_JAN22_1234.pdf",
     "description": "payslip for Jan 2022",
     "uploaded_date": "2022-02-24"
+  },
+  {
+    "name": "payslip_FEB22",
+    "key": "payslip_FEB22_1234.pdf",
+    "description": "payslip for Feb 2022",
+    "uploaded_date": "2022-02-24"
+  },
+  {
+    "name": "bank_statement_JAN",
+    "key": "bank_statement_JAN22_1234.pdf",
+    "description": "bank statement for Feb 2022",
+    "uploaded_date": "2022-02-24"
   }
 ]
