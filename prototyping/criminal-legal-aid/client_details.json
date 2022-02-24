@@ -6,22 +6,16 @@
   "type": "object",
   "properties": {
     "client": { "$ref": "#/definitions/person" },
-    "has_other_cases": { "type": "boolean" },
-    "other_cases_details": { "type": "string" },
     "on_remand": { "type": "boolean" },
+    "other_legal_aid_cases": { "type": "string" },
     "remanded_date": { "type": "string", "format": "date" },
-    "has_partner": { "type": "boolean" },
     "partner": { "$ref": "#/definitions/person" },
-    "partner_in_case": { "type": "boolean" },
-    "partner_in_case_reason": { "enum": ["co-defendant", "witness", "victim"] },
+    "partner_role_in_case": { "enum": ["co-defendant", "witness", "victim", "none"] },
     "partner_conflict_of_interest": { "type": "boolean" }
   },
-  "required": ["client", "has_partner"],
+  "required": ["client"],
   "dependentRequired": {
-    "has_other_cases": ["other_cases_details"],
-    "on_remand": ["remanded_date"],
-    "has_partner": ["partner", "partner_in_case", "partner_conflict_of_interest"],
-    "partner_in_case": ["partner_in_case_reason"]
+    "partner": ["partner_role_in_case", "partner_conflict_of_interest"],
   },
   "definitions": {
     "person": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/general/person.json" }
