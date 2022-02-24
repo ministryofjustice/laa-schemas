@@ -83,12 +83,18 @@
       },
       "allOf": [
         {
-          "if": { "properties": { "employment_status": { "const": "employed" } } },
-          "then": { "required": ["income", "employed_income"] }
+          "if": {
+            "properties": { "employment_status": { "const": "employed" } },
+            "required": ["employment_status"]
+          },
+          "then": { "required": ["employed_income"] }
         },
         {
-          "if": { "properties": { "employment_status": { "const": "self-employed" } } },
-          "then": { "required": ["income", "self_employed_income"] }
+          "if": {
+            "properties": { "employment_status": { "const": "self-employed" } },
+            "required": ["employment_status"]
+          },
+          "then": { "required": ["self_employed_income"] }
         }
       ]
     },

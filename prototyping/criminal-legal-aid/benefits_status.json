@@ -5,14 +5,11 @@
   "description": "Holds attributes of the benefits status of an applicant for criminal legal aid",
   "type": "object",
   "properties": {
-    "type": "object",
-    "properties": {
-      "passported": { "type": "boolean" },
-      "client_benefits": { "$ref": "#/definitions/benefits" },
-      "partner_benefits": { "$ref": "#/definitions/benefits" }
-    },
-    "required": ["passported"]
+    "passported": { "type": "boolean" },
+    "client_benefits": { "$ref": "#/definitions/benefits" },
+    "partner_benefits": { "$ref": "#/definitions/benefits" }
   },
+  "required": ["passported"],
   "definitions": {
     "benefits": {
       "type": "array",

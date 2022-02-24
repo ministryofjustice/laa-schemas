@@ -3,17 +3,14 @@
   "id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/evidence.json",
   "title": "Evidence",
   "description": "Holds attributes for items of evidence for criminal legal aid applications",
-  "type": "object",
-  "properties": {
-    "type": "array",
-    "items": {
-      "type": "object",
-      "properties": {
-        "name": { "type": "string" },
-        "key": { "type": "string" },
-        "description": { "type": "string" },
-        "uploaded_date": { "type": "string", "format": "date" }
-      }
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": { "type": "string" },
+      "key": { "type": "string" },
+      "description": { "type": "string" },
+      "uploaded_date": { "type": "string", "format": "date" }
     }
   }
 }
