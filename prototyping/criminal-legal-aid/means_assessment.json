@@ -25,7 +25,7 @@
           "properties": {
             "paye": { "$ref": "#/definitions/paye" },
             "other_employed_income": { "type": "boolean" },
-            "other_employed_income_details": { "type": "string" },
+            "other_employed_income_details": { "type": "string" }
           },
           "dependentRequired": {
             "other_employed_income": ["other_employed_income_details"]
@@ -156,7 +156,7 @@
                  "enum": ["with_partner", "landlord", "other_person", "sole"]
                },
                "share": { "type": "number" }
-            },
+            }
           }
         },
         "vehicle": {
