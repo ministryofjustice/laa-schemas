@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/conditions/full_means.json",
+  "id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/schemas/conditions/full_means.json",
   "title": "Full means test conditions",
   "description": "Conditions for legal aid applications that are subject to a full means test",
   "if": {

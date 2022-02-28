@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/interests_of_justice.json",
+  "id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/schemas/interests_of_justice.json",
   "title": "Interests of justice test",
   "description": "Holds attributes of the interests of justice test for criminal legal aid applications",
   "type": "array",

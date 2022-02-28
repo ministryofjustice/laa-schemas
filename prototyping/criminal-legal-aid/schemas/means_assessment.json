@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/means_assessment.json",
+  "id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/schemas/means_assessment.json",
   "title": "Means test",
   "description": "Holds attributes of the means test for criminal legal aid applications",
   "type": "object",
   "properties": {
-    "benefits_status": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/benefits_status.json" },
+    "benefits_status": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/schemas/benefits_status.json" },
     "total_income": { "type": "number" },
     "income": { "$ref": "#/definitions/income" },
     "outgoings": { "$ref": "#/definitions/outgoings" },
@@ -208,10 +208,10 @@
       }
     },
     "non_passported_conditions": {
-      "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/conditions/crown_court.json"
+      "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/schemas/conditions/crown_court.json"
     },
     "full_means_conditions": {
-      "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/conditions/full_means.json"
+      "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/schemas/conditions/full_means.json"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/conditions/crown_court.json",
+  "id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/schemas/conditions/crown_court.json",
   "title": "Crown Court conditions",
   "description": "Conditions for legal aid applications that relate to cases in the crown court",
   "if": {
