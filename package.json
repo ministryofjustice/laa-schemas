@@ -1,0 +1,17 @@
+{
+  "name": "laa-schemas-prototype",
+  "description": "Schema definitions for LAA Digital",
+  "version": "0.1.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ministryofjustice/laa-schemas.git"
+  },
+  "dependencies": {
+    "ajv": "~8.10.0",
+    "lodash": "^4.17.21"
+  },
+  "scripts": {
+    "generate": "node lib/generate-tolerant-schemas.js"
+  }
+}
