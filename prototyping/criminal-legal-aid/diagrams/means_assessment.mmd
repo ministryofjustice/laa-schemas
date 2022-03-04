@@ -1,4 +1,12 @@
 classDiagram
+  class means_assessment {
+    benefits_status
+    total_income
+    income
+    outgoings
+    capital
+  }
+
   means_assessment --> benefits_status
   class benefits_status {
     [click_to_see]
@@ -103,11 +111,6 @@ classDiagram
     asset_description
   }
 
-  means_assessment: benefits_status
-  means_assessment: total_income
-  means_assessment: income
-  means_assessment: outgoings
-  means_assessment: capital
 
   click benefits_status href "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/diagrams/benefits_status.svg" "Click to see benefits_status"
   click business_address href "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/general/address.svg" "Click to see address"

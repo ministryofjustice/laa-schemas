@@ -1,4 +1,12 @@
 classDiagram
+  class laa_application {
+    client_details
+    case_details
+    interests_of_justice
+    means_assessment
+    evidence
+  }
+
   laa_application --> client_details
   class client_details {
     [click_to_see]
@@ -24,11 +32,6 @@ classDiagram
     [click_to_see]
   }
 
-  laa_application: client_details
-  laa_application: case_details
-  laa_application: interests_of_justice
-  laa_application: means_assessment
-  laa_application: evidence
 
   click client_details href "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/diagrams/client_details.svg" "Click to see client_details"
   click case_details href "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/diagrams/case_details.svg" "Click to see case_details"
