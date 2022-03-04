@@ -18,6 +18,6 @@
     "partner": ["partner_role_in_case", "partner_conflict_of_interest"]
   },
   "definitions": {
-    "person": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/general/person.json" }
+    "person": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/general/schemas/person.json" }
   }
 }

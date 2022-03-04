@@ -35,7 +35,7 @@
           "type": "object",
           "properties": {
             "business_name": { "type": "string" },
-            "business_address": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/general/address.json" },
+            "business_address": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/general/schemas/address.json" },
             "tax_liability_last_2_years": { "type": "number" },
             "total_turnover": { "type": "number" },
             "total_drawings": { "type": "number" },

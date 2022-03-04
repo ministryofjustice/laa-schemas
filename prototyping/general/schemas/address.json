@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/general/address.json",
+  "id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/general/schemas/address.json",
   "title": "Address",
   "description": "Holds attributes of an address",
   "type": "object",
