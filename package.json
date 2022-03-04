@@ -12,6 +12,7 @@
     "lodash": "^4.17.21"
   },
   "scripts": {
-    "generate": "node lib/generate-tolerant-schemas.js"
+    "generate-tolerant": "node lib/generate-tolerant-schemas.js",
+    "generate-mmd": "node lib/generate-mermaid-diagrams.js"
   }
 }

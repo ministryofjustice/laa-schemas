@@ -1,0 +1,37 @@
+classDiagram
+  laa_application --> client_details
+  class client_details {
+    [click_to_see]
+  }
+
+  laa_application --> case_details
+  class case_details {
+    [click_to_see]
+  }
+
+  laa_application --> interests_of_justice
+  class interests_of_justice {
+    [click_to_see]
+  }
+
+  laa_application --> means_assessment
+  class means_assessment {
+    [click_to_see]
+  }
+
+  laa_application --> evidence
+  class evidence {
+    [click_to_see]
+  }
+
+  laa_application: client_details
+  laa_application: case_details
+  laa_application: interests_of_justice
+  laa_application: means_assessment
+  laa_application: evidence
+
+  click client_details href "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/diagrams/client_details.svg" "Click to see client_details"
+  click case_details href "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/diagrams/case_details.svg" "Click to see case_details"
+  click interests_of_justice href "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/diagrams/interests_of_justice.svg" "Click to see interests_of_justice"
+  click means_assessment href "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/diagrams/means_assessment.svg" "Click to see means_assessment"
+  click evidence href "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/diagrams/evidence.svg" "Click to see evidence"
