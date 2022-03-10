@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/schemas/conditions/non_passported.json",
+  "$id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/schemas/conditions/non_passported.json",
   "title": "Non passported conditions",
   "description": "Conditions for legal aid applications that are not passported for means",
   "if": {

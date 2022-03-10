@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/schemas/means_assessment.json",
+  "$id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/schemas/means_assessment.json",
   "title": "Means test",
   "description": "Holds attributes of the means test for criminal legal aid applications",
   "type": "object",

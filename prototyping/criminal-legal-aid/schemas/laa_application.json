@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/schemas/laa_application.json",
+  "$id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/schemas/laa_application.json",
   "title": "An application for criminal legal aid",
   "description": "Holds attributes of a criminal legal aid application",
   "type": "object",
