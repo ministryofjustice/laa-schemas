@@ -52,7 +52,7 @@
             "properties": {
               "income_type": {
                 "enum": [
-                  "benfits",
+                  "benefits",
                   "friends_family",
                   "maintenance",
                   "cash_in_hand",
@@ -109,7 +109,7 @@
             "type": "array",
             "items": {
               "type": "object",
-              "propertes": {
+              "properties": {
                 "paye_deduction_type": { "type": "string" },
                 "paye_deduction_amount": { "type": "number" }
               }
