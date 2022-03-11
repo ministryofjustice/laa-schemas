@@ -9,6 +9,7 @@ Crime applications:
 - [Base schema](https://github.com/ministryofjustice/laa-schemas/blob/main/prototyping/criminal-legal-aid/schemas/laa_application.json) for applications
 - [Sub schemas](https://github.com/ministryofjustice/laa-schemas/tree/main/prototyping/criminal-legal-aid/schemas) for sections of a legal aid application
 - [Conditional rules](https://github.com/ministryofjustice/laa-schemas/tree/main/prototyping/criminal-legal-aid/schemas/conditions) for when data is required
+- [API based on the crime applications schema](https://github.com/ministryofjustice/laa-crime-apply-prototype-api)
 
 ## Examples
 
