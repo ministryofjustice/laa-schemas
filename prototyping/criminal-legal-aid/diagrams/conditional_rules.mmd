@@ -1,0 +1,8 @@
+graph TD
+    A[court_type] -->|IF crown| B(capital)
+
+    C(passported) -->|IF false| D(income)
+    C(passported) -->|IF false| E(total_income)
+
+    F(total_income) -->|IF greater than 12475| G(outgoings)
+    F(total_income) -->|IF greater than 12475| H(capital)
