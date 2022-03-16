@@ -13,7 +13,7 @@
   "definitions": {
     "benefits": {
       "type": "array",
-      "items": { "enum": ["income_support", "esa", "pension_credit", "JSA"] }
+      "items": { "enum": ["income_support", "esa", "pension_credit", "jsa", "uc"] }
     }
   }
 }
