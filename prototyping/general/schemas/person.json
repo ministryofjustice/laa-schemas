@@ -12,5 +12,5 @@
     "email": { "type": "string", "format": "email" },
     "address": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/general/schemas/address.json" }
   },
-  "required": ["first_name", "last_name", "address"]
+  "required": ["first_name", "last_name"]
 }
