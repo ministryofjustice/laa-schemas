@@ -31,13 +31,13 @@
     "URN": "123abc"
   },
   "interests_of_justice": [
-    { "reason": "liberty"},
-    { "reason": "livelihood", "justification": "Lost job" }
+    "liberty",
+    "livelihood"
   ],
   "means_assessment": {
     "benefits_status":   {
       "passported": true,
-      "client_benefits": ["JSA"],
+      "client_benefits": ["uc"],
       "partner_benefits": ["income_support"]
     },
     "total_income": 1214,

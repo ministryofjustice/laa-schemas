@@ -5,23 +5,17 @@
   "description": "Holds attributes of the interests of justice test for criminal legal aid applications",
   "type": "array",
   "items": {
-    "type": "object",
-    "properties": {
-       "reason": {
-         "enum": [
-           "liberty",
-           "suspended_sentence",
-           "livelihood",
-           "reputation",
-           "question_of_law",
-           "unable_to_understand",
-           "witnesses_needed",
-           "expert_cross_examination",
-           "interests_of_another",
-           "ioj_other"
-         ]
-       },
-      "justification": { "type": "string" }
-    }
+    "enum": [
+       "liberty",
+       "suspended_sentence",
+       "livelihood",
+       "reputation",
+       "question_of_law",
+       "unable_to_understand",
+       "witnesses_needed",
+       "expert_cross_examination",
+       "interests_of_another",
+       "ioj_other"
+    ]
   }
 }
