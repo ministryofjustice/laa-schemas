@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/general/0.0.1/schemas/address.json",
+  "title": "Address",
+  "description": "Holds attributes of an address",
+  "type": "object",
+  "properties": {
+    "address_line_one": { "type": "string" },
+    "address_line_two": { "type": "string" },
+    "city": { "type": "string" },
+    "county": { "type": "string" },
+    "organisation": { "type": "string" },
+    "postcode": { "type": "string" }
+  },
+  "required": ["address_line_one", "county"]
+}
