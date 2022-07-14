@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/1.0.0/schemas/tolerant/legal_aid_application.json",
+  "title": "An application for criminal legal aid",
+  "description": "Attributes of a criminal legal aid application",
+  "type": "object",
+  "properties": {
+    "applicant_details": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/1.0.0/schemas/tolerant/applicant_details.json" },
+    "provider_details": {
+      "type": "object",
+      "properties": {
+        "firm": { "type": "string" },
+        "office": { "type": "string" },
+        "email": { "type": "string" }
+      }
+    },
+    "case_details": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/1.0.0/schemas/tolerant/case_details.json" },
+    "interests_of_justice": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "enum": [
+               "liberty",
+               "suspended_sentence",
+               "livelihood",
+               "reputation",
+               "question_of_law",
+               "unable_to_understand",
+               "witnesses_needed",
+               "expert_cross_examination",
+               "interests_of_another",
+               "ioj_other"
+            ]
+          },
+          "reason": { "type": "string" }
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "key": { "type": "string" },
+          "description": { "type": "string" },
+          "uploaded_date": { "type": "string", "format": "date" }
+        }
+      }
+    },
+    "application_type": { "type": "string" },
+    "application_reference": { "type": "string" },
+    "version": { "type": "number" }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "case_type": "indictable",
+  "court_type": "crown",
+  "co_defendants": [
+    {
+      "first_name": "Jill",
+      "last_name": "Brown",
+      "conflict_of_interest": false
+    }
+  ],
+  "offences": [
+    {
+      "name": "Assault",
+      "class": "c",
+      "date": "2020-06-22"
+    }
+ ],
+  "URN": "123abc"
+}

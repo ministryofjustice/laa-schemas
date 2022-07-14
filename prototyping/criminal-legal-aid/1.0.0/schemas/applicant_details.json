@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/1.0.0/schemas/applicant_details.json",
+  "title": "An applicant for criminal legal aid",
+  "description": "Attributes of an applicant for legal aid; the client of a criminal legal aid provider",
+  "type": "object",
+  "properties": {
+    "applicant": { "$ref": "#/definitions/person" },
+    "on_remand": { "type": "boolean" },
+    "other_legal_aid_cases": { "type": "string" },
+    "remanded_date": { "type": "string", "format": "date" },
+    "partner": { "$ref": "#/definitions/person" },
+    "partner_role_in_case": { "enum": ["co-defendant", "witness", "victim", "none"] },
+    "partner_conflict_of_interest": { "type": "boolean" },
+    "means": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/1.0.0/schemas/means.json" }
+  },
+  "required": ["applicant"],
+  "dependentRequired": {
+    "partner": ["partner_role_in_case", "partner_conflict_of_interest"]
+  },
+  "definitions": {
+    "person": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/general/0.0.1/schemas/person.json" }
+  }
+}

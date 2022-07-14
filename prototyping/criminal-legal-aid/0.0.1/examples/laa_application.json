@@ -42,7 +42,7 @@
     },
     "total_income": 1214,
     "income": {
-      "employed_status": "employed",
+      "employment_status": "employed",
       "employed_income": {
         "paye": [
           {
