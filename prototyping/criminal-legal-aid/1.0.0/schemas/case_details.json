@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/1.0.0/schemas/case_details.json",
+  "title": "A criminal court case",
+  "description": "Holds attributes of a court case that a legal aid application relates to",
+  "type": "object",
+  "properties": {
+    "case_type": {
+      "enum": [
+        "summary_only",
+        "either_way",
+        "indictable",
+        "already_in_crown_court",
+        "commital",
+        "appeal_to_crown_court",
+        "appeal_to_crown_court_with_changes"
+      ]
+    },
+    "court_type": {
+      "enum": [
+        "magistrates",
+        "crown"
+      ]
+    },
+    "co_defendant_names": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "first_name": { "type": "string" },
+          "last_name": { "type": "string "},
+          "conflict_of_interest": { "type": "boolean" }
+        }
+      }
+    },
+    "offences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "date": { "type": "string", "format": "date" },
+          "class": { "enum": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"] }
+        }
+      }
+    },
+    "URN": { "type": "string" }
+  },
+  "required": ["case_type", "court_type", "offences"]
+}
