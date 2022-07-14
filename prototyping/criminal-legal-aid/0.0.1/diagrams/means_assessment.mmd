@@ -1,0 +1,116 @@
+classDiagram
+  class means_assessment {
+    benefits_status
+    total_income
+    income
+    outgoings
+    capital
+  }
+
+  means_assessment --> benefits_status
+  class benefits_status {
+    [click_to_see]
+  }
+
+  means_assessment --> income
+  class income {
+    employment_status
+    employed_income
+    self_employed_income
+    other_income_sources
+    dependants
+  }
+
+  income --> employed_income
+  class employed_income {
+    paye
+    other_employed_income
+    other_employed_income_details
+  }
+
+  employed_income --> paye
+  class paye {
+    paye_date
+    paye_amount
+    paye_deductions
+  }
+
+  income --> self_employed_income
+  class self_employed_income {
+    business_name
+    business_address
+    tax_liability_last_2_years
+    total_turnover
+    total_drawings
+    total_profit
+    profit_share
+    director_salary
+  }
+
+  self_employed_income --> business_address
+  class business_address {
+    [click_to_see]
+  }
+
+  income --> other_income_sources
+  class other_income_sources {
+    income_type
+    other_income_amount
+    other_income_frequency
+  }
+
+  income --> dependants
+  class dependants {
+    date_of_birth
+  }
+
+  means_assessment --> outgoings
+  class outgoings {
+    outgoing_type
+    outgoing_amount
+    outgoing_frequency
+  }
+
+  means_assessment --> capital
+  class capital {
+    housing
+    vehicle
+    savings
+    assets
+    prohibited_assets
+    prohibited_description
+  }
+
+  capital --> housing
+  class housing {
+    property_value
+    remaining_mortgage
+    ownership_type
+    share
+  }
+
+  capital --> vehicle
+  class vehicle {
+    vehicle_value
+    remaining_payments
+    purchased_over_3_years
+    regular_use
+  }
+
+  capital --> savings
+  class savings {
+    savings_type
+    savings_value
+    savings_description
+  }
+
+  capital --> assets
+  class assets {
+    asset_type
+    asset_value
+    asset_description
+  }
+
+
+  click benefits_status href "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/diagrams/benefits_status.svg" "Click to see benefits_status"
+  click business_address href "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/general/diagrams/address.svg" "Click to see address"

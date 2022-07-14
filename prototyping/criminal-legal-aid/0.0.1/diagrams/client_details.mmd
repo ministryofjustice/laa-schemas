@@ -1,0 +1,24 @@
+classDiagram
+  class client_details {
+    client
+    on_remand
+    other_legal_aid_cases
+    remanded_date
+    partner
+    partner_role_in_case
+    partner_conflict_of_interest
+  }
+
+  client_details --> client
+  class client {
+    [click_to_see]
+  }
+
+  client_details --> partner
+  class partner {
+    [click_to_see]
+  }
+
+
+  click client href "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/general/diagrams/person.svg" "Click to see person"
+  click partner href "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/general/diagrams/person.svg" "Click to see person"
