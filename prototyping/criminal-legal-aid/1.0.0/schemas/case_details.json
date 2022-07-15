@@ -28,7 +28,7 @@
         "type": "object",
         "properties": {
           "first_name": { "type": "string" },
-          "last_name": { "type": "string "},
+          "last_name": { "type": "string" },
           "conflict_of_interest": { "type": "boolean" }
         }
       }
