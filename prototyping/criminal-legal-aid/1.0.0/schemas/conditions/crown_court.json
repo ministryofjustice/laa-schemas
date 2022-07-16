@@ -15,8 +15,10 @@
   "then": {
     "properties": {
       "applicant_details": {
-        "means": {
-          "required": ["capital"]
+        "properties": {
+          "means": {
+            "required": ["capital"]
+          }
         }
       }
     }
