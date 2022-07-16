@@ -22,7 +22,7 @@
         "crown"
       ]
     },
-    "co_defendant_names": {
+    "co_defendants": {
       "type": "array",
       "items": {
         "type": "object",
