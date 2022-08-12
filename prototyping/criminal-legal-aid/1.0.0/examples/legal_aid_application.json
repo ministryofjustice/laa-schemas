@@ -112,5 +112,6 @@
    ],
    "application_type": "Initial application",
    "application_reference": "LAA-123",
+   "application_start_date": "2022-07-24",
    "version": 1
 }
