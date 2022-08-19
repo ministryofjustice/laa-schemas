@@ -5,7 +5,7 @@
   "description": "Attributes of a criminal legal aid application",
   "type": "object",
   "properties": {
-    "applicant_details": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/1.0.0/schemas/tolerant/applicant_details.json" },
+    "client_details": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/1.0.0/schemas/tolerant/client_details.json" },
     "provider_details": {
       "type": "object",
       "properties": {
