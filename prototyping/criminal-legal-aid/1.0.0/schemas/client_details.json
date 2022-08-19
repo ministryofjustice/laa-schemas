@@ -14,7 +14,7 @@
     "partner_conflict_of_interest": { "type": "boolean" },
     "means": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/1.0.0/schemas/means.json" }
   },
-  "required": ["applicant"],
+  "required": ["client"],
   "dependentRequired": {
     "partner": ["partner_role_in_case", "partner_conflict_of_interest"]
   },
