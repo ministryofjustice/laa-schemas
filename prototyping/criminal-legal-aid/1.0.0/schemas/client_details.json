@@ -5,7 +5,7 @@
   "description": "Attributes of an applicant for legal aid; the client of a criminal legal aid provider",
   "type": "object",
   "properties": {
-    "applicant": { "$ref": "#/definitions/person" },
+    "client": { "$ref": "#/definitions/person" },
     "on_remand": { "type": "boolean" },
     "other_legal_aid_cases": { "type": "string" },
     "remanded_date": { "type": "string", "format": "date" },

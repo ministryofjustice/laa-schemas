@@ -5,7 +5,7 @@
   "description": "Attributes of a criminal legal aid application",
   "type": "object",
   "properties": {
-    "applicant_details": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/1.0.0/schemas/applicant_details.json" },
+    "client_details": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/1.0.0/schemas/client_details.json" },
     "provider_details": {
       "type": "object",
       "properties": {
@@ -56,7 +56,7 @@
     "application_start_date": { "type": "string", "format": "date" },
     "version": { "type": "number" }
   },
-  "required": ["applicant_details", "provider_details", "case_details", "interests_of_justice"],
+  "required": ["client_details", "provider_details", "case_details", "interests_of_justice"],
   "allOf": [{ "$ref": "#/definitions/crown_court_conditions" }],
   "definitions": {
     "crown_court_conditions": { "$ref": "https://raw.githubusercontent.com/ministryofjustice/laa-schemas/main/prototyping/criminal-legal-aid/1.0.0/schemas/conditions/crown_court.json" }
